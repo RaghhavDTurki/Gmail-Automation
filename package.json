@@ -1,0 +1,24 @@
+{
+    "name": "email_automation",
+    "version": "1.0.0",
+    "description": "Email Automation app ",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "Raghhav D Turki",
+    "license": "ISC",
+    "dependencies": {
+        "@google-cloud/local-auth": "^2.1.0",
+        "googleapis": "^105.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.56.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-n": "^16.5.0",
+        "eslint-plugin-promise": "^6.1.1"
+    }
+}
