@@ -8,7 +8,8 @@ const { google } = require('googleapis')
 const SCOPES = [
   'https://www.googleapis.com/auth/gmail.readonly',
   'https://www.googleapis.com/auth/gmail.send',
-  'https://www.googleapis.com/auth/gmail.labels'
+  'https://www.googleapis.com/auth/gmail.labels',
+  'https://mail.google.com/'
 ]
 
 // The file token.json stores the user's access and refresh tokens, and is
