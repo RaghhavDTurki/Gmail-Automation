@@ -11,11 +11,13 @@ async function main () {
     // Do these steps in random intervals of 45 to 120 seconds
     setInterval(
       async () => {
-        // console.log("Checking for new messages");
+        console.log('Checking for new messages')
         // Get the list of new messages.
         const newMessages = await getNewMessages(auth, now)
+        console.log('You have got ' + newMessages.length + ' new messages')
         // Send replies to the new messages.
         await sendReplies(auth, newMessages)
+        console.log('Replied to ' + newMessages.length + ' messages')
       },
       Math.floor(Math.random() * (120000 - 45000 + 1)) + 45000
     )
