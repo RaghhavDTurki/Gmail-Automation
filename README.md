@@ -7,6 +7,12 @@
 -   [x] Send replies to Emails that have no prior replies
 -   [x] Repeat the above steps in random intervals of 45 to 120 seconds
 
+## Tech Stack
+1. Node.js (v20.9.0)
+2. Google APIs Node.js Client
+3. Gmail API
+4. Eslint (Standard)
+
 ## Steps to run the project
 
 1. [Create a new project in Google Cloud Platform](https://console.cloud.google.com/projectcreate)
