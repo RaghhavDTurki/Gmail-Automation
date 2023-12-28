@@ -44,6 +44,10 @@ npm start
 7. Open the link in your browser and allow the permissions
 8. You are all set! The program will now run in the background and send replies to unread emails that have no prior replies
 
+## Improvements
+1. Add a database to store the emails that have been replied to, inorder to avoid sending multiple replies to the same email
+
+
 ## References
 
 -   [Google APIs Node.js Client](https://www.npmjs.com/package/googleapis)
