@@ -82,7 +82,7 @@ async function sendReplies (auth, newMessages) {
           (header) => header.name === 'In-Reply-To'
         )
         if (!hasReplied) {
-          const reply = createReply(email)
+          const reply = createReplyEmail(email)
           await gmail.users.messages.send({
             auth,
             userId: 'me',
@@ -116,7 +116,7 @@ async function sendReplies (auth, newMessages) {
  * @param {gmail_v1.Schema$Message} email The email to reply to.
  * @returns {string} The raw string of the reply.
  */
-function createReply (email) {
+function createReplyEmail (email) {
   const reply = `From: ${
         email.payload.headers.find((header) => header.name === 'To').value
     }\n`
